@@ -19,3 +19,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+### Example user template template
+### Example user template
+*.iml
+out
+gen
