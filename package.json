@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "sass": "node-sass -w scss/ -o public/css/ --recursive"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "node-sass": "^4.12.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {

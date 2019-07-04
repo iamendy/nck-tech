@@ -1,17 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>nck-tech</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but nck-tech doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>NCK Tech</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<noscript>
+  <strong>We're sorry but nck-tech doesn't work properly without JavaScript enabled. Please enable it to
+    continue.</strong>
+</noscript>
+<!--=====Navbar Starts Here=====-->
+<nav id="nav">
+  <div class="logo">
+    <img src="img/logo.png" alt="">
+  </div>
+  <div class="right">
+    <div class="menu">
+      <a href="#"> TRIPS </a>
+      <a href="#"> RECENTLY VIEWED </a>
+      <a href="#"> BOOKINGS </a>
+    </div>
+    <div class="avatar">
+      <img src="img/cardi.jpg" alt="User Avatar">
+    </div>
+    <div class="toggle">
+      <i class="fa fa-bars 2x"></i>
+    </div>
+  </div>
+</nav>
+<!--=====Navbar Ends Here=====-->
+
+<!--=====Navbar Starts Here=====-->
+<section id="payment-details">
+  <div class="container">
+    <div class="line"></div>
+
+    <section class="payment">
+      <div class="card-display">
+        <h3> Payment Information </h3>
+
+        <p class="gray"> Choose your method of payment. </p>
+
+        <div class="card">
+          <p>CARD NUMBER</p>
+          <p>4324 5433 9382 1030</p>
+
+          <img class="card-chip" src="img/card-chip.png" alt="card chip">
+
+          <p>EXPIRATION DATE</p>
+          <p>03/24</p>
+          <div class="bottom">
+            <p>John Doe</p>
+            <img class="mastercard" src="img/mastercard.png" alt="master card">
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="payment-method">
+          <img class="visa" src="img/visa.png" alt="Visa">
+          <img class="discover" src="img/discover.png" alt="Discover">
+          <span class="checkbox"> </span>
+          <img class="paypal" src="img/paypal.png" alt="Paypal">
+        </div>
+
+        <div class="form">
+          <div class="input">
+            <span class="label">Credit Card Number</span>
+            <input type="text" value="4324 5433 9382 1030">
+          </div>
+          <div class="input">
+            <span class="label">Expiration Date</span>
+            <input type="text" value="03/24">
+          </div>
+          <div class="input">
+            <span class="label">Security Code</span>
+            <input type="text" value="420">
+          </div>
+          <div class="input">
+            <span class="label">Postal Code</span>
+            <input type="text" value="10119">
+          </div>
+        </div>
+        <label for="remember" class="remember">
+          <span class="checkbox"></span>
+          Use this card for next time purchase
+          <input type="checkbox" id="remember" checked hidden>
+        </label>
+        <a class="btn block"> Add Card</a>
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <div class="summary">
+      <h4><span>Subtotal</span> <span>N2,497.00</span></h4>
+      <h4><span>Estimated TAX</span> <span>N119.64.00</span></h4>
+      <h4><span>Promotional Code: <span class="gray"> Z4KXLM9A</span> </span> <span>N2,497.00</span></h4>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="total">
+      <a class="btn"> Complete Payment </a> <h4>TOTAL: N2556.64</h4>
+    </div>
+  </div>
+</section>
+<!--=====Navbar Ends Here=====-->
+
+<div id="app">
+
+</div>
+</body>
 </html>
