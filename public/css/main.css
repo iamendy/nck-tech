@@ -100,7 +100,8 @@ input[type=number] {
         display: block;
         width: 100%;
         padding: .5rem;
-        color: #fff; }
+        color: #fff;
+        font-size: large; }
         #nav .right .menu a:hover {
           color: #ff0303; }
       #nav .right .menu a:first-child {
@@ -204,6 +205,9 @@ input[type=number] {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem; }
+  #payment-details .total span {
+    font-weight: bold;
+    font-size: large; }
 
 /*responsive styles*/
 /* Medium devices (tablets, 768px and up)*/
@@ -233,7 +237,8 @@ input[type=number] {
       #nav .right .menu a {
         display: inline-block;
         color: #000;
-        width: unset; }
+        width: unset;
+        font-size: large; }
       #nav .right .menu a:first-child {
         margin-top: 0; }
   #payment-details .payment {

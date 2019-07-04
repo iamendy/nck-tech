@@ -72,7 +72,7 @@
       <div class="line"></div>
 
       <div class="total">
-        <a class="btn"> Complete Payment </a> <h4>TOTAL: N2556.64</h4>
+        <a class="btn"> Complete Payment </a> <span>TOTAL: N2556.64</span>
       </div>
     </div>
   </section>

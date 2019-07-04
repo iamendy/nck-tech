@@ -120,6 +120,7 @@ input[type=number]{
         width: 100%;
         padding: .5rem;
         color: #fff;
+        font-size: large;
         &:hover{
           color: #ff0303;
         }
@@ -272,5 +273,9 @@ input[type=number]{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    span{
+      font-weight: bold;
+      font-size: large;
+    }
   }
 }
