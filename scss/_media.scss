@@ -1,5 +1,12 @@
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 15px;
+    margin: auto;
+    overflow: hidden;
+  }
+
   #nav {
     align-items: flex-end;
     margin: 2rem auto;
@@ -32,17 +39,19 @@
   }
 
   #payment-details {
-    .container {
-      max-width: 720px;
-      padding: 0 15px;
-      margin: auto;
-      overflow: hidden;
-    }
-
     .payment {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;
+
+      .details{
+        .payment-method{
+          margin-bottom: 2.5rem;
+        }
+        .remember{
+          margin-bottom: 1rem;
+        }
+      }
 
       .card {
         max-width: 300px;
@@ -59,6 +68,20 @@
     margin: auto;
     overflow: hidden;
   }
+
+  #payment-details{
+    .payment{
+      .card-display{
+        .card{
+          max-width: 368px;
+          p{
+            margin: .5rem;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/

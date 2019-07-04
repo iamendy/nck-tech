@@ -9,6 +9,9 @@
 body {
   font-family: Roboto, sans-serif;
   font-size: 0.875rem;
+  &.no-scroll{
+    overflow: hidden;
+  }
 }
 
 p {
@@ -23,7 +26,9 @@ a {
   text-decoration: none;
 }
 
-input[type=text] {
+
+input[type=text],
+input[type=number]{
   padding: 1rem;
   border: solid 2px #e0e2e5;
   background: #f0f1f3;
@@ -110,15 +115,22 @@ input[type=text] {
       text-align: center;
       background: #000;
       font-weight: bold;
+      z-index: 5;
       a {
         display: block;
         width: 100%;
         padding: .5rem;
         color: #fff;
+        &:hover{
+          color: #ff0303;
+        }
       }
 
       a:first-child {
         margin-top: 1rem;
+      }
+      &.show{
+        display: block;
       }
     }
 
@@ -144,6 +156,9 @@ input[type=text] {
         margin-bottom: .5rem;
       }
       .card {
+        p{
+          height: 22px;
+        }
         margin: 1rem 0;
         padding: .7rem;
         color: #fff;
@@ -210,8 +225,13 @@ input[type=text] {
         align-items: center;
         margin:.5rem 0;
         position: relative;
+        span:first-child{
+          margin-left: 24px;
+        }
         .checkbox {
-          margin-right: .3rem;
+          position: absolute;
+          top: 0;
+          left: 0;
           height: 20px;
           width: 20px;
           background-color: $gray-color;
@@ -220,7 +240,21 @@ input[type=text] {
       }
 
       input#remember:checked ~ .checkbox {
-        background: red;
+        background: $primary-color;
+        content: '';
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+      }
+      input#remember:checked ~ .checkbox::after{
+        content: '';
+        height: 8px;
+        position: absolute;
+        width: 8px;
+        top: 30%;
+        left: 30%;
+        border-radius: 50%;
+        background: #fff;
       }
     }
   }
