@@ -1,12 +1,14 @@
 # nck-tech [Test App]
 
-## Project setup on local system
-```
-npm install
-```
+#Features
+- 100% responsive
+- Formats Card Input as User Types
+- Hosted on netlify
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+#Frontend
+- Built without any CSS Framework
+- Implemented SASS preprocessor
+- Implemented CSS Grid, FlexBox for responsiveness
+- Vue.js and Vanilla JavaScript
+
  Demo app built with love by Umeh Nnamdi Kingsley
